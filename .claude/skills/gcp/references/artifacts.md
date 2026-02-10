@@ -1,5 +1,14 @@
 # gcloud artifacts — Artifact Registry Reference
 
+## Contents
+- [Overview](#overview)
+- [Repositories](#repositories)
+- [Docker images](#docker-images)
+- [Package management](#package-management)
+- [Cleanup policies](#cleanup-policies)
+- [IAM](#iam)
+- [Troubleshooting](#troubleshooting)
+
 ## Overview
 
 Artifact Registry is Google Cloud's package manager for container images, language packages (npm, Python, Maven, Go), and OS packages. It replaces Container Registry (gcr.io).

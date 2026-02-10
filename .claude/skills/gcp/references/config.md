@@ -1,5 +1,13 @@
 # gcloud config — CLI Configuration & Named Configurations Reference
 
+## Contents
+- [Overview](#overview)
+- [Properties](#properties)
+- [Named Configurations](#named-configurations)
+- [Environment Variable Overrides](#environment-variable-overrides)
+- [Configuration File Locations](#configuration-file-locations)
+- [Troubleshooting](#troubleshooting)
+
 ## Overview
 
 `gcloud config` manages properties that control the behavior of the gcloud CLI. Properties are organized into sections (e.g., `core`, `compute`, `functions`) and can be scoped to named configurations for switching between projects/accounts quickly.

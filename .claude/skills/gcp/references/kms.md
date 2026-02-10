@@ -1,5 +1,16 @@
 # gcloud kms — Cloud KMS (Key Management Service) Reference
 
+## Contents
+- [Overview](#overview)
+- [Key rings](#key-rings)
+- [Keys](#keys)
+- [Key versions](#key-versions)
+- [Encrypt and decrypt](#encrypt-and-decrypt)
+- [Sign and verify](#sign-and-verify)
+- [IAM](#iam)
+- [CMEK (Customer-Managed Encryption Keys)](#cmek-customer-managed-encryption-keys)
+- [Troubleshooting](#troubleshooting)
+
 ## Overview
 
 Cloud KMS manages cryptographic keys for encrypting data, signing payloads, and managing secrets. Keys are organized in key rings, and key rings belong to a location. Key material never leaves Google's infrastructure.

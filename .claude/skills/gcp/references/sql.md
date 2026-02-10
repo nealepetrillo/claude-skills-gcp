@@ -1,5 +1,17 @@
 # gcloud sql — Cloud SQL Reference
 
+## Contents
+- [Overview](#overview)
+- [Instances](#instances)
+- [Databases](#databases)
+- [Users](#users)
+- [Connect](#connect)
+- [Authorized networks (public IP access)](#authorized-networks-public-ip-access)
+- [Backups](#backups)
+- [Export and import](#export-and-import)
+- [Replicas](#replicas)
+- [Troubleshooting](#troubleshooting)
+
 ## Overview
 
 Cloud SQL provides managed relational databases: **MySQL**, **PostgreSQL**, and **SQL Server**. Google handles replication, backups, patching, and failover.

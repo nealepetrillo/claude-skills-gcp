@@ -1,5 +1,15 @@
 # gcloud storage — Cloud Storage Reference
 
+## Contents
+- [Overview](#overview)
+- [Buckets](#buckets)
+- [Objects](#objects)
+- [IAM and access control](#iam-and-access-control)
+- [Notifications (Pub/Sub)](#notifications-pubsub)
+- [gsutil (legacy CLI)](#gsutil-legacy-cli)
+- [Common patterns](#common-patterns)
+- [Troubleshooting](#troubleshooting)
+
 ## Overview
 
 Cloud Storage provides object storage for unstructured data. The `gcloud storage` command group (replacing legacy `gsutil`) manages buckets and objects. Bucket names are globally unique.

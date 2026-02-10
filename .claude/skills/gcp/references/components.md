@@ -1,5 +1,16 @@
 # gcloud components — SDK Component Management Reference
 
+## Contents
+- [Overview](#overview)
+- [Install components](#install-components)
+- [Update](#update)
+- [Remove](#remove)
+- [List components](#list-components)
+- [Reinstall](#reinstall)
+- [SDK version and info](#sdk-version-and-info)
+- [Key components](#key-components)
+- [Troubleshooting](#troubleshooting)
+
 ## Overview
 
 `gcloud components` manages the installed components of the Google Cloud SDK. Components include CLI tools (gcloud, gsutil, bq), language extensions, emulators, and additional utilities.

@@ -1,5 +1,14 @@
 # gcloud pubsub — Pub/Sub Messaging Reference
 
+## Contents
+- [Overview](#overview)
+- [Topics](#topics)
+- [Subscriptions](#subscriptions)
+- [Snapshots](#snapshots)
+- [Schemas](#schemas)
+- [IAM](#iam)
+- [Troubleshooting](#troubleshooting)
+
 ## Overview
 
 Pub/Sub is a fully managed real-time messaging service. Publishers send messages to **topics**, and subscribers receive them via **subscriptions** (pull or push). Messages are retained until acknowledged.

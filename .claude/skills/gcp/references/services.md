@@ -1,5 +1,15 @@
 # gcloud services — API Management Reference
 
+## Contents
+- [Overview](#overview)
+- [Enable APIs](#enable-apis)
+- [Disable APIs](#disable-apis)
+- [List APIs](#list-apis)
+- [Operations](#operations)
+- [Commonly needed APIs](#commonly-needed-apis)
+- [Common patterns](#common-patterns)
+- [Troubleshooting](#troubleshooting)
+
 ## Overview
 
 `gcloud services` enables and disables Google Cloud APIs for a project. Most GCP resources require their corresponding API to be enabled before use.

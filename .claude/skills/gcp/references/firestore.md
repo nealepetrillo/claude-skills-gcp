@@ -1,5 +1,15 @@
 # gcloud firestore — Firestore Database Reference
 
+## Contents
+- [Overview](#overview)
+- [Databases](#databases)
+- [Indexes](#indexes)
+- [Export and import](#export-and-import)
+- [Operations](#operations)
+- [Required APIs](#required-apis)
+- [Common patterns](#common-patterns)
+- [Troubleshooting](#troubleshooting)
+
 ## Overview
 
 Firestore is a serverless NoSQL document database. It supports Native mode (document/collection model with real-time listeners) and Datastore mode (entity/kind model, backward-compatible with Datastore). The `gcloud firestore` commands manage databases, indexes, and operations.

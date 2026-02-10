@@ -2,6 +2,18 @@
 
 The gcloud CLI provides local emulators for testing against GCP services without incurring costs or requiring network access. Available emulators: **Firestore**, **Pub/Sub**, **Bigtable**, **Datastore**, and **Spanner**.
 
+## Contents
+- [Installation](#installation)
+- [Common Pattern: start → env-init → run app](#common-pattern-start--env-init--run-app)
+- [Firestore Emulator](#firestore-emulator)
+- [Pub/Sub Emulator](#pubsub-emulator)
+- [Bigtable Emulator](#bigtable-emulator)
+- [Datastore Emulator](#datastore-emulator)
+- [Spanner Emulator](#spanner-emulator)
+- [Docker-Based Emulators](#docker-based-emulators)
+- [Environment Variable Summary](#environment-variable-summary)
+- [Troubleshooting](#troubleshooting)
+
 ## Installation
 
 Emulators are installed as separate SDK components:

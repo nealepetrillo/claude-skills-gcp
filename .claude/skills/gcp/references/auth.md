@@ -1,5 +1,13 @@
 # gcloud auth — Authentication & Credentials Reference
 
+## Contents
+- [Critical Concept: gcloud Auth vs ADC](#critical-concept-gcloud-auth-vs-adc)
+- [Subcommands](#subcommands)
+- [Service Account Impersonation](#service-account-impersonation)
+- [Access Token from File](#access-token-from-file)
+- [ADC Credential Resolution Order](#adc-credential-resolution-order)
+- [Common Patterns](#common-patterns)
+
 ## Critical Concept: gcloud Auth vs ADC
 
 These are **two separate credential stores** that serve different purposes:

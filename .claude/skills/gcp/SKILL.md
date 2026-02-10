@@ -70,33 +70,6 @@ gcloud config list
 
 Bundled sub-tools: `bq` (BigQuery), `gsutil` (Cloud Storage), `kubectl` (Kubernetes).
 
-## Detailed References
-
-Read the corresponding reference file for detailed coverage of each command group:
-
-- **Authentication & Credentials**: `references/auth.md` — gcloud auth subcommands, ADC, service accounts, impersonation, Docker/git credential helpers, token management, and the critical distinction between gcloud auth vs ADC auth.
-- **CLI Configuration**: `references/config.md` — properties, named configurations, environment variable overrides, and multi-project/account management.
-- **Project Management**: `references/projects.md` — create/delete projects, organizations, folders, labels, and billing.
-- **IAM & Service Accounts**: `references/iam.md` — service accounts, IAM policies, role bindings, custom roles, Workload Identity Federation, and GKE Workload Identity.
-- **Compute Engine**: `references/compute.md` — instances, disks, images, VPC networking, firewalls, static IPs, instance groups, and autoscaling.
-- **GKE (Kubernetes Engine)**: `references/container.md` — clusters, node pools, kubectl integration, Autopilot, Workload Identity, and operations.
-- **Cloud Functions & Cloud Run**: `references/functions-and-run.md` — function deployment (Gen2), Cloud Run services and jobs, traffic splitting, IAM for invocation, and the Gen2/Cloud Run relationship.
-- **App Engine**: `references/app.md` — deployment, versions, traffic splitting, services, app.yaml configuration, and firewall rules.
-- **Cloud Build**: `references/builds.md` — build submission, cloudbuild.yaml, triggers, substitutions, worker pools, and common builders.
-- **Cloud Storage**: `references/storage.md` — buckets, objects, upload/download, rsync, signed URLs, IAM, lifecycle policies, and notifications.
-- **Firestore**: `references/firestore.md` — databases, indexes, export/import, backup strategies, and security rules.
-- **Pub/Sub**: `references/pubsub.md` — topics, subscriptions (pull/push), schemas, snapshots, dead-letter topics, and message ordering.
-- **Cloud SQL**: `references/sql.md` — instances (PostgreSQL, MySQL, SQL Server), databases, users, connections, backups, export/import, and replicas.
-- **Secret Manager**: `references/secrets.md` — secrets, versions, IAM, integration with Cloud Run/Functions, notifications, and rotation.
-- **Cloud Logging**: `references/logging.md` — reading/writing logs, filters, sinks (exports), exclusions, and log-based metrics.
-- **Cloud Monitoring**: `references/monitoring.md` — dashboards, alerting policies, notification channels, uptime checks, and metrics.
-- **Artifact Registry**: `references/artifacts.md` — Docker, Python, npm, Maven, and Go repositories, authentication, cleanup policies, and migration from gcr.io.
-- **Cloud DNS**: `references/dns.md` — managed zones, record sets, transactions, DNSSEC, DNS policies, and common record types.
-- **Cloud KMS**: `references/kms.md` — key rings, keys, versions, encrypt/decrypt, sign/verify, CMEK, and IAM.
-- **Emulators**: `references/emulators.md` — local emulators for Firestore, Pub/Sub, Bigtable, Datastore, and Spanner, including environment variable setup, port configuration, and Python client patterns.
-- **API Management**: `references/services.md` — enabling/disabling APIs, listing enabled services, and commonly needed API service names.
-- **SDK Components**: `references/components.md` — installing, updating, and removing gcloud SDK components, emulators, and tools.
-
 ## Common Workflows
 
 ### Deploy a Cloud Function (Gen2)

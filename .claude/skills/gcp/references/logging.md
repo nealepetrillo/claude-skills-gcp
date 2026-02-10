@@ -1,5 +1,14 @@
 # gcloud logging — Cloud Logging Reference
 
+## Contents
+- [Overview](#overview)
+- [Read logs](#read-logs)
+- [Write logs](#write-logs)
+- [Log sinks (exports)](#log-sinks-exports)
+- [Log exclusions](#log-exclusions)
+- [Log-based metrics](#log-based-metrics)
+- [Troubleshooting](#troubleshooting)
+
 ## Overview
 
 Cloud Logging (formerly Stackdriver Logging) collects, stores, and analyzes log data from GCP services and custom applications. Logs are organized by resource type, log name, and severity.

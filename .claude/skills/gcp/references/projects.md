@@ -1,5 +1,15 @@
 # gcloud projects — Project Management Reference
 
+## Contents
+- [Overview](#overview)
+- [Create and manage](#create-and-manage)
+- [Project properties](#project-properties)
+- [Set active project](#set-active-project)
+- [Organization and folders](#organization-and-folders)
+- [Labels](#labels)
+- [Billing](#billing)
+- [Troubleshooting](#troubleshooting)
+
 ## Overview
 
 GCP projects are the top-level organizing entity. All resources belong to a project, and billing, APIs, and IAM are managed at the project level.

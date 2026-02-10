@@ -2,6 +2,12 @@
 
 Cloud Functions (Gen2) runs on Cloud Run under the hood. Many operational commands (logs, revisions, traffic splitting) use `gcloud run` even for Gen2 functions.
 
+## Contents
+- [Cloud Functions](#cloud-functions)
+- [Cloud Run](#cloud-run)
+- [Relationship: Cloud Functions Gen2 ↔ Cloud Run](#relationship-cloud-functions-gen2--cloud-run)
+- [Troubleshooting](#troubleshooting)
+
 ## Cloud Functions
 
 ### gcloud functions deploy

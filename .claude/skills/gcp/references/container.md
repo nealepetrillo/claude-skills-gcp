@@ -1,5 +1,14 @@
 # gcloud container — Google Kubernetes Engine (GKE) Reference
 
+## Contents
+- [Overview](#overview)
+- [Clusters](#clusters)
+- [Node pools](#node-pools)
+- [Kubectl integration](#kubectl-integration)
+- [Operations](#operations)
+- [Common patterns](#common-patterns)
+- [Troubleshooting](#troubleshooting)
+
 ## Overview
 
 `gcloud container` manages GKE clusters, node pools, and related resources. GKE runs Kubernetes on GCP with managed control planes, auto-upgrades, and tight integration with GCP services.

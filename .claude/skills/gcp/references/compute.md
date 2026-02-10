@@ -1,5 +1,14 @@
 # gcloud compute — Compute Engine Reference
 
+## Contents
+- [Overview](#overview)
+- [Instances](#instances)
+- [Disks](#disks)
+- [Images](#images)
+- [Networking](#networking)
+- [Instance groups and autoscaling](#instance-groups-and-autoscaling)
+- [Troubleshooting](#troubleshooting)
+
 ## Overview
 
 Compute Engine provides VMs (instances), persistent disks, networking (VPCs, firewalls, load balancers), and related infrastructure. Commands are organized under `gcloud compute`.

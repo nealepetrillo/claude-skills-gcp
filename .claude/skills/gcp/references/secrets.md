@@ -1,5 +1,15 @@
 # gcloud secrets — Secret Manager Reference
 
+## Contents
+- [Overview](#overview)
+- [Secrets](#secrets)
+- [Versions](#versions)
+- [IAM](#iam)
+- [Integration with other services](#integration-with-other-services)
+- [Notifications](#notifications)
+- [Common patterns](#common-patterns)
+- [Troubleshooting](#troubleshooting)
+
 ## Overview
 
 Secret Manager stores API keys, passwords, certificates, and other sensitive data. Secrets have versions, and access is controlled via IAM. Secrets are encrypted at rest and in transit.

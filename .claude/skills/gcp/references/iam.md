@@ -1,5 +1,14 @@
 # gcloud iam — Identity, Access Management & Service Accounts Reference
 
+## Contents
+- [Service Accounts](#service-accounts)
+- [IAM Policies — Project Level](#iam-policies--project-level)
+- [IAM Policies — Resource Level](#iam-policies--resource-level)
+- [Roles](#roles)
+- [Workload Identity Federation](#workload-identity-federation)
+- [Workload Identity for GKE](#workload-identity-for-gke)
+- [Troubleshooting](#troubleshooting)
+
 ## Service Accounts
 
 Service accounts are non-human identities used by applications, VMs, and CI/CD pipelines to authenticate to GCP APIs.
