@@ -4,6 +4,8 @@
 - [Overview](#overview)
 - [Buckets](#buckets)
 - [Objects](#objects)
+  - [Signed URLs (CLI)](#signed-urls)
+  - [Signed URLs in Python (without a key file)](#signed-urls-in-python-without-a-key-file)
 - [IAM and access control](#iam-and-access-control)
 - [Notifications (Pub/Sub)](#notifications-pubsub)
 - [gsutil (legacy CLI)](#gsutil-legacy-cli)
@@ -135,6 +137,67 @@ gcloud storage sign-url gs://BUCKET/OBJECT \
   --duration=1h \
   --impersonate-service-account=SA_EMAIL
 ```
+
+### Signed URLs in Python (without a key file)
+
+On Cloud Run, Cloud Functions, GKE, or any environment using Application Default Credentials (ADC), you typically don't have a service account key file. The standard `blob.generate_signed_url()` call will fail without one. The workaround is to **refresh the default credentials** to obtain an access token, then pass both the service account email and the token to `generate_signed_url()`.
+
+**Required imports:**
+```python
+import google.auth
+import google.auth.credentials
+import google.auth.transport.requests
+from google.cloud import storage
+```
+
+**Step 1 — Obtain default credentials (once, at startup):**
+```python
+credentials, project = google.auth.default()
+storage_client = storage.Client()
+```
+
+**Step 2 — Refresh credentials and generate signed URL (per request):**
+```python
+import datetime
+
+# Refresh the access token — required before each signing operation
+# because tokens expire (typically after ~1 hour).
+credentials.refresh(google.auth.transport.requests.Request())
+
+bucket = storage_client.bucket("my-bucket")
+blob = bucket.blob("path/to/object.ext")
+
+signed_url = blob.generate_signed_url(
+    version="v4",
+    expiration=datetime.timedelta(hours=1),  # URL valid for 1 hour
+    method="GET",
+    # These two parameters let you sign without a key file:
+    service_account_email=credentials.service_account_email,
+    access_token=credentials.token,
+)
+```
+
+**Optional parameters for `generate_signed_url()`:**
+```python
+signed_url = blob.generate_signed_url(
+    version="v4",
+    expiration=datetime.timedelta(days=7),
+    method="GET",
+    service_account_email=credentials.service_account_email,
+    access_token=credentials.token,
+    # Force download with a specific filename:
+    response_disposition=f"attachment; filename={filename}",
+    # Set content type for inline display:
+    response_type="video/mp4",
+)
+```
+
+**Key points:**
+- `credentials.refresh()` must be called before signing — the token may be expired or not yet fetched
+- The `service_account_email` and `access_token` parameters together replace the need for a key file
+- This works with any ADC-provided credentials that have a `service_account_email` attribute (service accounts on Cloud Run, GKE with Workload Identity, etc.)
+- The underlying service account must have the `iam.serviceAccounts.signBlob` permission on itself (granted by `roles/iam.serviceAccountTokenCreator`)
+- For upload signed URLs, change `method="PUT"` and optionally set `content_type`
 
 ## IAM and access control
 
